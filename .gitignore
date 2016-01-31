@@ -1,0 +1,14 @@
+*.swp
+Makefile
+Makefile.in
+aclocal.m4
+*.cache
+compile
+config*
+depcomp
+install-sh
+missing
+.deps
+src/gltest
+*.o
+stamp-*
