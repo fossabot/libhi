@@ -31,15 +31,21 @@ void draw(GLFWwindow *window, NVGcontext *vg) {
 	nvgBeginFrame(vg, window_width, window_height, pixel_ratio);
 
 	nvgStrokeColor(vg, nvgRGBf(1.0f, 1.0f, 1.0f));
-	nvgStrokeWidth(vg, 0.001f);
+	nvgStrokeWidth(vg, 1.0f);
 	nvgLineCap(vg, NVG_SQUARE);
 
-	nvgScale(vg, (float)window_width, (float)window_height);
+	//nvgScale(vg, (float)window_width, (float)window_height);
 
-	nvgBeginPath(vg);
-	nvgMoveTo(vg, 0.25f, 0.50f);
-	nvgLineTo(vg, 0.75f, 0.50f);
-	nvgClosePath(vg);
+	//nvgBeginPath(vg);
+	//nvgMoveTo(vg, 25.0f, 50.0f);
+	//nvgLineTo(vg, 75.0f, 50.0f);
+	//nvgClosePath(vg);
+	//nvgStroke(vg);
+
+	nvgFontFace(vg, "04B-03B");
+	nvgFontSize(vg, 16.0f);
+	nvgFontBlur(vg, 0.0f);
+	nvgText(vg, 50.0f, 50.0f, "HELLO WORLD!", NULL);
 	nvgStroke(vg);
 
 	nvgEndFrame(vg);
@@ -68,12 +74,14 @@ int main(int argc, char **argv) {
 
 	glfwMakeContextCurrent(window);
 
-	vg = nvgCreateGL2(NVG_ANTIALIAS | NVG_STENCIL_STROKES | NVG_DEBUG);
+	vg = nvgCreateGL2(NVG_ANTIALIAS | NVG_STENCIL_STROKES);
 	if(vg == NULL) {
 		fprintf(stderr, "NanoVG init failed\n");
 		glfwTerminate();
 		return -1;
 	}
+
+	nvgCreateFont(vg, "04B-03B", "04B_03B_.TTF");
 
 	// vsync
 	//glfwSwapInterval(0);
