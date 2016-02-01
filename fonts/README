@@ -1,0 +1,6 @@
+These fonts are converted to a header with "xxd -i foo.ttf >fonts.h",
+which is included by the library. This is easier than trying to
+convince libtool to append a binary artifact in a cross-platform way.
+
+We keep copies of the original TTF files here, just in case we need to
+re-generate the headers later.
