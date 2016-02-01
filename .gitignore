@@ -4,7 +4,6 @@ Makefile.in
 aclocal.m4
 *.cache
 compile
-config*
 depcomp
 install-sh
 missing
