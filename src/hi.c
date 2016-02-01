@@ -90,7 +90,7 @@ int hi_init(void **context_ptr) {
 		return ERR_NANOVG_INIT;
 	}
 
-	nvgCreateFont(context->vg, "04B-03B", "04B_03B_.TTF");
+	nvgCreateFont(context->vg, "04B-03B", "fonts/04B_03B_.TTF");
 
 	// vsync
 	//glfwSwapInterval(0);

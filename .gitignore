@@ -21,3 +21,4 @@ configure
 src/.libs
 *.la
 *.lo
+.dirstamp
