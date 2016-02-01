@@ -1,3 +1,2 @@
 SUBDIRS=src
-ACLOCAL_AMFLAGS=-Im4
 AM_CFLAGS=-std=c99 -Wall
