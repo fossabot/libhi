@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
 	// context is an invalid pointer at this point, don't use it again.
 	context = NULL;
 	printf("hi_update returned nonzero, we're done!\n");
+	hi_destroy(context);
 
 	return 0;
 }
