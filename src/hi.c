@@ -1,5 +1,5 @@
 #include <GLFW/glfw3.h>
-#include <OpenGL/gl.h>
+//#include <OpenGL/gl.h>
 #include "nanovg/src/nanovg.h"
 #define NANOVG_GL2_IMPLEMENTATION
 #include "nanovg/src/nanovg_gl.h"

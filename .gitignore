@@ -8,7 +8,7 @@ depcomp
 install-sh
 missing
 .deps
-src/gltest
+src/hitest
 *.o
 stamp-*
 libtool
