@@ -8,4 +8,4 @@ libhi_la_LDFLAGS=$(GLFW3_LIBS) -framework OpenGL -version-info 0:0:0 -export-sym
 
 bin_PROGRAMS=gltest
 gltest_SOURCES=gltest.c
-gltest_LDFLAGS=-L.libs/ -lhi
+gltest_LDFLAGS=-lhi

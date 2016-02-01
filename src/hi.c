@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 #include "hi.h"
-
+#include "font.h"
 
 typedef struct hi_context_t {
 	GLFWwindow *window;
@@ -90,7 +90,8 @@ int hi_init(void **context_ptr) {
 		return ERR_NANOVG_INIT;
 	}
 
-	nvgCreateFont(context->vg, "04B-03B", "fonts/04B_03B_.TTF");
+	//nvgCreateFont(context->vg, "04B-03B", "fonts/04B_03B_.TTF");
+	nvgCreateFontMem(context->vg, "04B-03B", FONT_04B_03B_TTF, FONT_04B_03B_TTF_len, 0);
 
 	// vsync
 	//glfwSwapInterval(0);
