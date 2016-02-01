@@ -6,8 +6,6 @@
 
 #include <stdint.h>
 #include <stdio.h>
-#include <signal.h>
-#include <time.h>
 
 #include "hi.h"
 #include "font.h"
