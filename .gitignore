@@ -12,3 +12,8 @@ missing
 src/gltest
 *.o
 stamp-*
+libtool
+ar-lib
+ltmain.sh
+m4/lt*.m4
+m4/libtool.m4
